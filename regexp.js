@@ -66,7 +66,8 @@ const options = {
     repair: '(?:-(s-remontom))?'
 };
 
-regExp = new RegExp(language + newBuidings + region + city + geolocation.aria + geolocation.metro +
-geolocation.shore +  geolocation.nearMetro + geolocation.street + options.build + options.inProcessOfConstruction +
-options.type + options.сlassRealty + options.roommate + options.termination + options.repair);
+const myRegExp = language + newBuidings + region + city + geolocation.aria + geolocation.metro +
+    geolocation.shore +  geolocation.nearMetro + geolocation.street + options.build + options.inProcessOfConstruction +
+    options.type + options.сlassRealty + options.roommate + options.termination + options.repair;
 
+console.log(new RegExp(myRegExp).exec('/ru/novostroyki-kiyevskaya-oblast-ekonom-klassa'));
